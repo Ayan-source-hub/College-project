@@ -2,13 +2,13 @@
 <html>
   <head>
     <style>
-      body{
+      .text{
         backgroud-color:red;
         color:white;
         }
     </style>
   </head>
   <body>
-    Hello!
+   <div class="text"> Hello!</div>
   </body>
 </html>
