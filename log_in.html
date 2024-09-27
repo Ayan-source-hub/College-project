@@ -1,0 +1,195 @@
+<html>
+ <head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+   body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background: linear-gradient(to right, #d4a5d4, #1a1a3d); */
+            background: linear-gradient(90deg, #AC72A1, #FBD9FA, #070E2A);
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width:800px;
+            padding-left: 80%;
+            display: flex;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            /* backdrop-filter: blur(10px); */
+            /* -webkit-backdrop-filter: blur(10px); */
+            padding: 20px;
+        }
+        .form-container { 
+            padding-right: 0%;
+            margin-left:80px;
+            margin-right:0px;
+            margin-top: 25px;
+            margin-bottom: 55px;
+            padding: 2cqi;
+            height:400px;
+            width:2000px;
+            border-radius: 20px;
+            background: rgba(203, 202, 202, 0);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+            /* backdrop-filter: blur(10px); */
+            /* -webkit-backdrop-filter: blur(10px); */
+            margin-right: 20px;
+        }
+        .form-container h2 {
+            width:350px;
+            margin-top: 15px;
+            text-align: center;
+            color: #4b2c4b;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .form-container label {
+            width:350px;
+            display: block;
+            margin: 10px 0 5px;
+            margin-left: 0px;
+            color: #4b2c4b;
+        }
+        .form-container input {
+            width:350px;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            margin-left: 0px;
+            border: none;
+            border-bottom: 1px solid #4b2c4b;
+            background: transparent;
+            color: #4b2c4b;
+            font-size: 1em;
+        }
+        .form-container input:focus {
+            width:300px;
+            outline: none;
+        }
+        .form-container .icon  {
+            margin-left: 50px;
+            padding: -15%;
+            width:270px;
+            position:relative;
+        }
+        .form-container .icon #Username #Email #Password {
+            /* margin-left: 50px; */
+            margin-top: -15px;
+            padding: -15%;
+            width:250px;
+            /* position:initial; */
+        }
+        .form-container .icon i {
+            width:10px;
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #4b2c4b;
+        }
+        
+        .form-container button {
+            width: 50%;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            background: linear-gradient(to right, #4b2c4b, #1a1a3d);
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: 20px;
+            margin-left: 55px;
+        }
+        .form-container button:hover {
+            background: linear-gradient(to right, #1a1a3d, #4b2c4b);
+        }
+        .form-container .login-link {
+            width: 85%;
+            text-align: center;
+            margin-top: 10px;
+            margin-left: 10px;
+            color: #0c0b0c;
+            font-weight: bold;
+        }
+        .form-container .login-link .icon {
+            width: 85%;
+            text-align: center;
+            margin-top: 10px;
+            margin-left: 20px;
+            color: #0c0b0c;
+            font-weight: bold;
+        }
+        .form-container .login-link .icon .icon1{
+            width: 85%;
+            text-align: center;
+            margin-top: 10px;
+            color: #4b2c4b;
+            font-weight: bold;
+        }
+        .form-container .login-link .icon1{
+            text-align: center;
+            margin-top: 10px;
+            padding:3px;
+            color: #4b2c4b;
+            font-weight: bold;
+        }
+
+        .form-container .image-container {
+            border-radius: 20px;
+            overflow: hidden;
+            padding:60px;
+            padding-top:10px;
+            margin-left: 0px;
+        }
+        .image-container img {
+            margin-top:40px;
+            margin-left: -200px;
+            border-radius: 40px;
+            width: 260%;
+            height: 77%;
+            object-fit:cover;
+            box-shadow: 0 4px 30px rgba(0, 0, 0,0.8);
+            transition: border-radius 10s;
+            /* border-radius: 40px; */
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="form-container">
+    <h2>Sign up</h2>
+    <div class="icon">
+     <label for="username">User name</label>
+     <input id="username" name="username" type="text"/>
+     <i class="fas fa-user"></i>
+    </div>
+    <div class="icon"><label for="email">Email</label>
+     <input id="email" name="email" type="email"/>
+     <i class="fas fa-envelope"></i>
+    </div>
+    <div class="icon"><label for="password">Password</label>
+     <input id="password" name="password" type="password"/>
+     <i class="fas fa-lock"></i>
+    </div>
+    <button>Login</button>
+    <div class="login-link">
+        <div class="login-link">
+            <a href="#" class="icon1"><i class="fa-brands fa-google-plus-g"></i></a>
+            <a href="#" class="icon1"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="icon1"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="icon1"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="icon"> Already have an account</a>
+        </div>
+    </div>
+   </div>
+   <div class="image-container">
+    <img alt="Colorful abstract painting of a woman's face with vibrant colors and flowers" height="300" src="log in pic.jpeg" width="100"/>
+   </div>
+  </div>
+ </body>
+</html>
